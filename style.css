@@ -138,6 +138,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 5em;
+    flex-wrap: wrap;
 }
 #about img{
     width: 30vw;
@@ -221,7 +222,7 @@ ul li{
     border: 3px solid rgb(49 ,49 ,49);
     border-radius: 0.5em;
     width: 500px;
-    max-height: 700px;
+    /* max-height: 700px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
