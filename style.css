@@ -161,15 +161,29 @@ section{
     display: flex;
     text-align: left;
     gap: 10em;
+    display: flex;
+    align-items: center ;
+    gap: 0.5em;
+    justify-content: center;
 }
-.skills ul{
+.box ul{
     font-size: 1.3em;
     font-weight: 500;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: aliceblue;
     opacity: 0.8;
     align-items: baseline;
+}
+
+ul li{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
 }
 .skills ul li span{
     display: flex;
@@ -206,8 +220,8 @@ section{
 .box{
     border: 3px solid rgb(49 ,49 ,49);
     border-radius: 0.5em;
-    max-width: 500px;
-    height: 700px;
+    width: 500px;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,3 +250,30 @@ section{
     min-height: 25px;
     border-radius: 0.5em;
 }
+
+
+
+
+
+
+
+.neon-text {
+    /* font-size: .4rem; */
+    color: #fff;
+    text-shadow: 0 0 2px #6cff52, 0 0 3px #6cff52, 0 0 6px #6cff52, 0 0 8px #6cff52, 0 0 10px #6cff52;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px #6cff52, 0 0 3px #6cff52, 0 0 4px #6cff52, 0 0 5px #6cff52, 0 0 7px #6cff52;
+    }
+    /* 50% {
+        text-shadow: 0 0 2px #e47564, 0 0 3px #e47564, 0 0 6px #e47564, 0 0 8px #e47564, 0 0 10px #e47564;
+    } */
+    100% {
+        text-shadow: 0 0 2px #3ec5ff, 0 0 3px #3ec5ff, 0 0 4px #3ec5ff, 0 0 5px #3ec5ff, 0 0 7px #3ec5ff;
+    }
+}
+
+ 
