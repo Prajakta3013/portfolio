@@ -196,13 +196,18 @@ section{
     margin: 0.5em 0;
 }
 .services-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    display: flex;
+    width: 100%;
     gap:2em ;
+    align-items: center;
+    justify-content: center;
 }
+
 .box{
     border: 3px solid rgb(49 ,49 ,49);
     border-radius: 0.5em;
+    max-width: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,6 +218,10 @@ section{
     color: aliceblue;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+.fullscreen-img {
+     object-fit: cover; /* Ensures the image covers the screen without distortion */
+    z-index: -1; /* Sends it behind other content */
 }
 .box:hover{
     border: 3px solid rgb(100, 100, 100);
